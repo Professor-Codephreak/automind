@@ -61,9 +61,9 @@ In this documentation, we will explore how the Python files uiux.py, memory.py, 
 
 This integrated system allows users to have dynamic conversations, store and retrieve interaction history, and receive informed responses based on the context of the ongoing conversation. The outcome is a sophisticated conversational interface that leverages various Python files to provide an engaging and contextually relevant experience.
 
-to do 
-add download model to UI
-add wgetter
-add gitgetter
-add automindx (executable folder sandbox)
+to do<br />
+add download model to UI<br />
+add wgetter<br />
+add gitgetter<br />
+add automindx (executable folder sandbox)<br />
 
