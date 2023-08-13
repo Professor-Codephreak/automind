@@ -66,5 +66,6 @@ add download model to UI<br />
 add wgetter<br />
 add gitgetter<br />
 add automindx (executable folder sandbox)<br />
+add deployai gpt-auto function calling<br />
 add multimodel parsing from aglm.py
 
