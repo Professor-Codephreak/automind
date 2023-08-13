@@ -66,4 +66,5 @@ add download model to UI<br />
 add wgetter<br />
 add gitgetter<br />
 add automindx (executable folder sandbox)<br />
+add multimodel parsing from aglm.py
 
