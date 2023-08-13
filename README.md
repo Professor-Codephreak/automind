@@ -10,7 +10,7 @@ In this documentation, we will explore how the Python files uiux.py, memory.py, 
 
     uiux.py: This file contains code for creating a GUI-based conversational user interface using the gradio library. Users can interact with various language models through this UI. The main components include:
 
-        run_ui(model, tokenizer, is_chat_model, model_type, save_history=True): This function sets up the UI interface using gradio. It takes a pre-trained model, a tokenizer, flags to indicate model type and whether it's a chat model, and a history-saving option. Users can input messages in a chat-like interface, and the responses are generated and displayed.
+    run_ui(model, tokenizer, is_chat_model, model_type, save_history=True): This function sets up the UI interface using gradio. It takes a pre-trained model, a tokenizer, flags to indicate model type and whether it's a chat model, and a history-saving option. Users can input messages in a chat-like interface, and the responses are generated and displayed.
 
         User Interaction Flow:
             The user inputs a message through the UI.
