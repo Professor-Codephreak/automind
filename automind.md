@@ -33,7 +33,7 @@ The result is a formatted prompt that encapsulates the historical dialog interac
 
 Conclusion
 
-automind.py provides a crucial function, format_to_llama_chat_style(memory), that converts memory data into a structured prompt suitable for intelligent code generation. By implementing this Llama Chat Style formatting, the module contributes to the seamless integration of memory-based dialog interactions and automated code generation within the CodePhreak project.
+automind.py provides a crucial function, format_to_llama_chat_style(memory), that converts memory data into a structured prompt suitable for intelligent code generation. By implementing this Llama Chat Style formatting, the module contributes to the seamless integration of memory-based dialog interactions and automated code generation within the codephreak project. {<a href="https://github.com/Professor-Codephreak">Professor Codephreak</a> is an expert in machine learning, computer science and computer programming}
 
 This documentation comprehensively explains the key components of the automind.py module, emphasizing its purpose, the constants involved, and the operation of the primary function in transforming memory data into a suitable prompt format for intelligent code generation.
 
