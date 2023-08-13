@@ -4,6 +4,7 @@ project codename = codephreak<br />
 "Professor Codephreak is an expert in machine learning, computer science and computer programming ..."<br />
 uiux.py provides Gradio output to local server for local language model interaction<br />
 Gradio interacts with html javascript and css <a href="https://www.gradio.app/guides/custom-CSS-and-JS">custom Gradio</a><br />
+<a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
 Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py
 
 In this documentation, we will explore how the Python files uiux.py, memory.py, automind.py, and aglm.py interact with each other to create a conversational UI interface and generate contextual responses. Provided is a  detailed overview of the interactions and the outcome of running these files together. modular design has been intionally chosen to serve as contextual agent interaction and addition of the executable agent module automindx.py
