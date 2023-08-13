@@ -20,3 +20,10 @@ python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" -
 model_name.txt in the models folder with your model will autoread. the above overwrites the call to model_name.txt<br />
 models folder = models<br />
 memory folder = memory<br />
+
+
+-------
+
+conda env list<br/>
+conda list<br/>
+conda info package_name<br/>
