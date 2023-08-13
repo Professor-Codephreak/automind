@@ -6,8 +6,8 @@ llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
 git clone https://github.com/Professor-Codephreak/automind<br />
 cd automind<br />
 pip install -r requirements.txt<br />
-huggingface-cli login<br />
 https://huggingface.co/settings/tokens<br /><br />
+huggingface-cli login<br />
 
 Install conda<br />
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
