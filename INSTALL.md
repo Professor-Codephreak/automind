@@ -1,4 +1,4 @@
-# Example of loading automind using Ubuntu 22.04LTS<br />
+# Example loading automind using Ubuntu 22.04LTS<br />
 
 default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
 
