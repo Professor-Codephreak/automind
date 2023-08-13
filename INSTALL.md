@@ -9,7 +9,6 @@ sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
 source ~/.bashrc<br />
 conda create --name automind python=3.9.1<br />
 conda activate automind<br />
-#conda deactivate<br />
 
 git clone https://github.com/Professor-Codephreak/automind<br />
 cd automind<br />
@@ -27,3 +26,4 @@ memory folder = memory<br />
 conda env list<br/>
 conda list<br/>
 conda info package_name<br/>
+conda deactivate<br />
