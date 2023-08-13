@@ -1,6 +1,5 @@
-automind
-
-automind.py Documentation Introduction
+automind automind.py<br />
+# Introduction
 
 automind.py is a Python module that contributes to the CodePhreak project by facilitating the transformation of memory data into a structured prompt. This prompt is formatted using a specialized style known as "Llama Chat Style," which is designed to enable intelligent code generation and interaction. Table of Contents
 
@@ -31,7 +30,7 @@ Extract the new instruction from the most recent dialog and append it to the pro
 
 The result is a formatted prompt that encapsulates the historical dialog interactions and the user's new instruction, all conforming to the Llama Chat Style.
 
-Conclusion
+# Conclusion
 
 automind.py provides a crucial function, format_to_llama_chat_style(memory), that converts memory data into a structured prompt suitable for intelligent code generation. By implementing this Llama Chat Style formatting, the module contributes to the seamless integration of memory-based dialog interactions and automated code generation within the codephreak project. {<a href="https://github.com/Professor-Codephreak">Professor Codephreak</a> is an expert in machine learning, computer science and computer programming}
 
