@@ -4,5 +4,5 @@ langchain==0.0.237
 gradio==3.37.0
 llama-cpp-python==0.1.73
 fire==0.5.0
-ujson
+ujson=5.8.0
 psutil
