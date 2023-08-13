@@ -1,3 +1,4 @@
+IAML Intelligent Autonomous Machine Learning
 project codename = codephreak
 "Professor Codephreak is an expert in machine learning, computer science and computer programming ..."
 generic local language model gradio output
