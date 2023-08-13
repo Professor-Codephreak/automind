@@ -1,44 +1,61 @@
-# automind
+project codename = codephreak
+"Professor Codephreak is an expert in machine learning, computer science and computer programming ..."
+generic local language model gradio output
+Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py
 
-automind.py Documentation
-Introduction
+In this documentation, we will explore how the Python files uiux.py, memory.py, automind.py, and aglm.py interact with each other to create a conversational UI interface and generate contextual responses. Provided is a  detailed overview of the interactions and the outcome of running these files together. These files are modular and serve as the basis for the executable module automindx.py
 
-automind.py is a Python module that contributes to the CodePhreak project by facilitating the transformation of memory data into a structured prompt. This prompt is formatted using a specialized style known as "Llama Chat Style," which is designed to enable intelligent code generation and interaction.
-Table of Contents
+    uiux.py: This file contains code for creating a GUI-based conversational user interface using the gradio library. Users can interact with various language models through this UI. The main components include:
 
-    Constants
-    Function: format_to_llama_chat_style(memory)
+        run_ui(model, tokenizer, is_chat_model, model_type, save_history=True): This function sets up the UI interface using gradio. It takes a pre-trained model, a tokenizer, flags to indicate model type and whether it's a chat model, and a history-saving option. Users can input messages in a chat-like interface, and the responses are generated and displayed.
 
-1. Constants
+        User Interaction Flow:
+            The user inputs a message through the UI.
+            The run_ui function captures the user input and prepares it for processing.
+            The user input is passed to the model for generating a response.
+            The response is displayed on the UI.
 
-In automind.py, the following constants are defined to assist in formatting the prompts:
+        Outcome:
+            Users can have interactive conversations with language models through the UI, receiving responses in real-time.
+            Conversations are displayed in a chat format, with both user inputs and model responses visible.
 
-    BOS: The beginning-of-sequence token, denoting the start of a sequence.
-    EOS: The end-of-sequence token, indicating the conclusion of a sequence.
-    B_INST, E_INST: Tokens marking the beginning and end of an instruction in the Llama Chat Style.
-    B_SYS, E_SYS: Tokens enclosing a system instruction in the Llama Chat Style.
-    DEFAULT_SYSTEM_PROMPT: A default system prompt template used for instruction formatting.
+    memory.py: This file handles the management and storage of conversation memory. It provides functions to save conversation history and format it for later use. Key components include:
 
-2. Function: format_to_llama_chat_style(memory)
+        save_conversation_memory(memory): This function takes a conversation memory as input, formats it, and saves it as a JSON file. Each memory entry consists of user instructions and model responses.
 
-This function takes memory as input, where memory represents a sequence of dialog pairs, each consisting of an instruction and a response (except for the most recent dialog). The function formats this memory data into a structured prompt that adheres to the Llama Chat Style.
+        Outcome:
+            Conversation history is saved in JSON files, allowing users to refer back to previous interactions.
+            The formatted memory can later be utilized for analysis, training, or generating contextual responses.
 
-The process involves the following steps:
+    automind.py: This file provides functions to format conversation data into "llama chat style," which is suitable for input to the "Llama" model. It prepares conversation context for generating contextual responses. Key components include:
 
-    Iterate through each dialog pair in the memory, extracting the instruction and response.
-    Handle None values for instruction and response by replacing them with empty strings.
-    For the first dialog pair, prepend the default system prompt template using the B_SYS and E_SYS tokens.
-    Format each instruction and response pair using the B_INST, E_INST, and EOS tokens. For the first instruction, the BOS token is not explicitly added due to tokenization behavior.
-    Extract the new instruction from the most recent dialog and append it to the prompt. If this is the first dialog, the default system prompt is prepended.
+        format_to_llama_chat_style(memory) -> str: This function formats conversation memory into a specific style called "llama chat style." It appends system prompts and instruction-response pairs.
 
-The result is a formatted prompt that encapsulates the historical dialog interactions and the user's new instruction, all conforming to the Llama Chat Style.
+        Outcome:
+            Conversation memory is transformed into a format that can be readily used by the "Llama" model for generating responses.
+            The formatted context is designed to provide meaningful and coherent prompts to the model.
 
+    aglm.py: This file interacts with conversation memory data and the "Llama" model to generate contextual responses. It loads memory, prepares conversation context, and generates responses. Key components include:
 
-Conclusion
+        LlamaModel class: Initializes and manages the "Llama" model and tokenizer.
 
-automind.py provides a crucial function, format_to_llama_chat_style(memory), that converts memory data into a structured prompt suitable for intelligent code generation. By implementing this Llama Chat Style formatting, the module contributes to the seamless integration of memory-based dialog interactions and automated code generation within the CodePhreak project.
+        generate_contextual_output(conversation_context): This method generates a response based on conversation context by formatting it, encoding it, and decoding the model's output.
 
-This documentation comprehensively explains the key components of the automind.py module, emphasizing its purpose, the constants involved, and the operation of the primary function in transforming memory data into a suitable prompt format for intelligent code generation.
+        main(): Orchestrates the process by loading memory data, batching conversations, initializing the model, and generating responses.
 
-    
-    to do automindx.py an executable environment for software
+        Outcome:
+            Contextual responses are generated based on the entire conversation history using the "Llama" model.
+            The responses are coherent and informed by the conversation's context.
+
+    Interactions and Flow:
+        Users interact with the UI created by uiux.py, having conversations with language models.
+        User inputs and model responses are collected and stored in conversation memory through memory.py.
+        Conversation memory is formatted into "llama chat style" using functions from automind.py.
+        The formatted conversation context is used by aglm.py to generate contextual responses through the "Llama" model.
+
+    Overall Outcome:
+        Users can engage in interactive conversations with language models through the UI.
+        Conversations are recorded and formatted for future use.
+        The "Llama" model generates meaningful responses based on the context of the entire conversation history.
+
+This integrated system allows users to have dynamic conversations, store and retrieve interaction history, and receive informed responses based on the context of the ongoing conversation. The outcome is a sophisticated conversational interface that leverages various Python files to provide an engaging and contextually relevant experience.
