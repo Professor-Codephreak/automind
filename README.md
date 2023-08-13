@@ -59,3 +59,10 @@ In this documentation, we will explore how the Python files uiux.py, memory.py, 
         The "Llama" model generates meaningful responses based on the context of the entire conversation history.
 
 This integrated system allows users to have dynamic conversations, store and retrieve interaction history, and receive informed responses based on the context of the ongoing conversation. The outcome is a sophisticated conversational interface that leverages various Python files to provide an engaging and contextually relevant experience.
+
+to do 
+add download model to UI
+add wgetter
+add gitgetter
+add automindx (executable folder sandbox)
+
