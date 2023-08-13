@@ -3,10 +3,6 @@ import os
 import pathlib
 import time
 import ujson
-import os
-import pathlib
-import time
-import ujson
 
 # Define the constant for memory folder
 MEMORY_FOLDER = "./memory/"
