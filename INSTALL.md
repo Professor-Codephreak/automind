@@ -1,5 +1,3 @@
-# this will update soon
-
 # Example of loading automind using Ubuntu 22.04LTS<br />
 Put the model in the models folder<br />
 add the model name to model_name.txt<br />
