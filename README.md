@@ -40,4 +40,5 @@ automind.py provides a crucial function, format_to_llama_chat_style(memory), tha
 
 This documentation comprehensively explains the key components of the automind.py module, emphasizing its purpose, the constants involved, and the operation of the primary function in transforming memory data into a suitable prompt format for intelligent code generation.
 
-# to do automindx.py an executable environment for software
+    
+    to do automindx.py an executable environment for software
