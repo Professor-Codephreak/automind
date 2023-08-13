@@ -8,7 +8,7 @@ Gradio interacts with html javascript and css <a href="https://www.gradio.app/gu
 <a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
 Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py
 
-In this documentation, we will explore how the Python files uiux.py, memory.py, automind.py, and aglm.py interact with each other to create a conversational UI interface and generate contextual responses. Provided is a  detailed overview of the interactions and the outcome of running these files together. modular design has been intentionally chosen to serve as contextual agent interaction and addition of the executable agent module automindx.py
+In this documentation, we will explore how the Python files uiux.py, memory.py, automind.py, and aglm.py interact with each other to create a conversational UI interface and generate contextual responses. Provided is a  detailed overview of the interactions and the outcome of running these files together. modular design has been intentionally chosen to serve as contextual agent interaction and addition of the executable agent module automindx.py to follow
 
     uiux.py:
 This file contains code for creating a GUI-based conversational user interface using the gradio library. Users can interact with various language models through this UI. The main components include:
