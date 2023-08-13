@@ -1,6 +1,6 @@
 # this will update soon
 
-Example of loading automind using Ubuntu<br />
+# Example of loading automind using Ubuntu 22.04LTS<br />
 Put the model in the models folder<br />
 add the model name to model_name.txt<br />
 llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
@@ -8,15 +8,13 @@ llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
 git clone https://github.com/Professor-Codephreak/automind<br />
 cd automind<br />
 pip install -r requirements.txt<br />
-https://huggingface.co/settings/tokens<br /><br />
-huggingface-cli login<br />
 
-Install conda<br />
+# Install conda<br />
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
 chmod +x Miniconda3-latest-Linux-x86_64.sh<br />
 ./Miniconda3-latest-Linux-x86_64.sh<br />
 source ~/.bashrc<br />
-conda create --name automind<br />
+conda create --name automind python=3.9.1<br />
 conda activate automind<br />
 #conda deactivate<br />
 
