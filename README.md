@@ -28,7 +28,7 @@ LLAMA Model Interaction (aglm.py):
 Initialization of a LLAMA language model and tokenizer based on a specified models_folder.
 Processing and tokenization of conversation context using the LLAMA model.
 Generating contextually relevant responses using the LLAMA model.
-Overall, the provided code suggests the creation of a conversational AI system called AUTOMIND that uses a LLAMA language model to generate responses based on user instructions and conversation history. The project encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
+AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. automind encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
 
 # documentation
 
