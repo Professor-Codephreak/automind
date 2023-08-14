@@ -38,7 +38,7 @@ conda --version
 # Create and activate the 'automind' conda environment
 conda create --name automind python=3.9.1 -y
 source ~/.bashrc
-conda init bash
+conda init zsh
 source ~/.bashrc
 conda activate automind
 conda env list
