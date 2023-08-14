@@ -1,4 +1,9 @@
-# Example loading automind using Ubuntu 22.04LTS<br />
+# Example loading automind using Ubuntu 22.04LTS<br /><br />
+Creates Professor Codephreak>br />
+Professor Codephreak is an expert in machine learning, computer science and computer programming<br />
+codephreak agenda: to create AUTOMINDx autonomous deployment<br />
+
+
 
 default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
 
