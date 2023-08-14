@@ -1,7 +1,7 @@
 #!/bin/bash
 # Manjaro test for automind
 # automind (c) 2023 codephreak MIT license
-# checks for conda and updates or installs conda
+# checks for conda and installs or updates conda
 # actives automind conda environment
 # clones automind
 # installs automind with default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin
