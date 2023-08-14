@@ -12,8 +12,8 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
 chmod +x Miniconda3-latest-Linux-x86_64.sh<br />
 sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
 source ~/.bashrc<br />
-conda create --name automind python=3.9.1<br />
-#replace with your shell here
+conda create --name automind python=3.9.1<br /><br />
+#replace with your shell here<br />
 conda activate bash<br />
 
 git clone https://github.com/Professor-Codephreak/automind<br />
