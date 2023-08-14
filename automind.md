@@ -75,5 +75,6 @@ Example Use Case
 
 The automind.py module can be utilized within a conversational system to prepare conversation memory for input to AutoMind and AUTOMINDx engine. By formatting conversation data in the specific chat style of the Llama Chatbot, the system ensures that memory data is properly structured and enhanced with system prompts, ready for use in generating context-aware responses within the AutoMind environment.<br /><br />
 
+<a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/7675060345879017836756807061815685501584179421371855056758523075766886858753">Professor Codephreak</a> in self portrait<br />
 <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/7675060345879017836756807061815685501584179421371855056758523065871282208769">AUTOMINDx</a> design goal<br />
-<a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/7675060345879017836756807061815685501584179421371855056758523075766886858753">Professor Codephreak</a> in self portrait
+
