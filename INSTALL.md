@@ -71,6 +71,9 @@ pip install llama-cpp-python<br />
 cmake --version<br />
 # On Ubuntu 22.04.6 automind.install works with gcc (Ubuntu 11.4.0-1ubuntu1`22.04) 11.4.0<br />
 gcc --version</br />
+# config gcc alternatives<br />
+sudo update-alternatives --config gcc<br />
+
 
 
 
