@@ -26,6 +26,7 @@ default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
 chmod +x Miniconda3-latest-Linux-x86_64.sh<br />
 sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
+#reload the shell configuration settings change for your shell example is for bash
 source ~/.bashrc<br />
 conda create --name automind python=3.9.1<br /><br />
 #replace with your shell here<br />
