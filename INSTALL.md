@@ -26,8 +26,10 @@ model_name.txt in the models folder with your model will autoread. the above ove
 models folder = models<br />
 memory folder = memory<br /><br />
 
+-----------------------------------
+
 creating a one click installer, however, for now<br />
-copy paste automind.install to your desired install folder<br />
+copy paste <a href="https://github.com/Professor-Codephreak/automind/blob/main/automind.install">automind.install</a> to your desired install folder<br />
 save as automind.install<br />
 #from the terminal<br />
 chmod +x automind.install<br />
