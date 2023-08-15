@@ -4,7 +4,7 @@ To install right click "Save link as ..." [automind.install](https://raw.githubu
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
 
-details and verbose procedure
+detailed and verbose procedure
 1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
 2. Choose "Save link as..." or "Download linked file" from the context menu.
 3. Select a location on your computer to save the file.
