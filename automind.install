@@ -67,18 +67,20 @@ source ~/$INIT_FILE
 # show details of the conda install
 conda --version
 
-# Create automind miniconda environment
+# Create automind Miniconda environment
 conda create --name automind python=3.9.1 -y
 # Activate automind miniconda enviroment
 conda activate automind
 source ~/$INIT_FILE
 
-# Display miniconda environment list to terminal output
+# Display Miniconda environment list to terminal output
 conda env list
 
-# Initialize miniconda from the detected shell
+# Initialize Miniconda from the detected shell
 echo "Initializing Miniconda for $USER_SHELL..."
 conda init $USER_SHELL
+
+# Source the initialization file
 source ~/$INIT_FILE
 
 # Check if pip is installed
