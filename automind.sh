@@ -32,16 +32,18 @@ fi
 
 source ~/.bashrc
 
-# show details of the conda install
-conda --version
+# Detect the user's shell and set the shell name as a variable
+USER_SHELL=$(env | grep SHELL | awk -F'=' '{print $2}')
+
+# Initialize Miniconda for the detected shell
+echo "Initializing Miniconda for $USER_SHELL..."
+conda init $USER_SHELL
+source ~/.bashrc
 
 # Create and activate the 'automind' conda environment
 conda create --name automind python=3.9.1 -y
 source ~/.bashrc
-conda init zsh
-source ~/.bashrc
-#add environemnt shell script here
-conda activate zsh
+conda activate automind
 conda env list
 
 # Install gradio and psutil
@@ -57,7 +59,7 @@ pip install -r requirements.txt
 # Run UIUX
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
 
-#README
-#two terminal inputs for deployment make automind exectuable and open with bash
-#chmod +x automind.sh
-#./automind.sh
+# README
+# Two terminal inputs for deployment: make automind executable and open with bash
+# chmod +x automind.sh
+# ./automind.sh
