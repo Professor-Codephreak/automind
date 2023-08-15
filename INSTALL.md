@@ -35,7 +35,16 @@ save as automind.install<br />
 chmod +x automind.install<br />
 ./automind.install<br /><br />
 
-[Click here to download automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+## Download automind.install
+
+To download the `automind.install` file, follow these steps:
+
+1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+2. Choose "Save link as..." or "Download linked file" from the context menu.
+3. Select a location on your computer to save the file.
+
+Once the download is complete, you can proceed with the installation process.
+
 
 
 
