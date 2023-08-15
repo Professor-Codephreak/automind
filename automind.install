@@ -9,9 +9,26 @@
 # launches boilerplate Gradio instruction response and expose API to localhost and globalhost
 # Professor Codephreak is ...
 
+# Detect user's shell and set shell initialization file
+USER_SHELL=$(env | grep SHELL | awk -F'=' '{print $2}')
+if [[ "$USER_SHELL" == *"bash"* ]]; then
+    INIT_FILE=".bashrc"
+elif [[ "$USER_SHELL" == *"zsh"* ]]; then
+    INIT_FILE=".zshrc"
+elif [[ "$USER_SHELL" == *"fish"* ]]; then
+    INIT_FILE=".config/fish/config.fish"
+elif [[ "$USER_SHELL" == *"powershell"* ]]; then
+    INIT_FILE="Microsoft.PowerShell_profile.ps1"
+elif [[ "$USER_SHELL" == *"csh"* ]]; then
+    INIT_FILE=".cshrc"
+else
+    echo "Unsupported shell: $USER_SHELL"
+    exit 1
+fi
+
 # Add Script Directories to PATH
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/$INIT_FILE
+source ~/$INIT_FILE
 
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -22,8 +39,8 @@ if ! command -v conda &> /dev/null; then
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod +x Miniconda3-latest-Linux-x86_64.sh
     sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
-    echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> ~/.bashrc
-    source ~/.bashrc
+    echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> source ~/$INIT_FILE
+    source source ~/$INIT_FILE
     # Change ownership of the miniconda3 directory to the user
     sudo chown -R $USER:$USER $HOME/miniconda3
 else
@@ -31,26 +48,34 @@ else
     conda update -y conda
 fi
 
-source ~/.bashrc
+source source ~/$INIT_FILE
 
 # show details of the conda install
 conda --version
 
 # Create automind miniconda environment
 conda create --name automind python=3.9.1 -y
-source ~/.bashrc
+source source ~/$INIT_FILE
 # Activate automind miniconda enviroment
 conda activate automind
 # Display miniconda environment list to terminal output
 conda env list
 
-# Detect user's shell setting shell name as a variable
-USER_SHELL=$(env | grep SHELL | awk -F'=' '{print $2}')
-
-# Initialize miniconda for the detected shell
+# Initialize miniconda from the detected shell
 echo "Initializing Miniconda for $USER_SHELL..."
 conda init $USER_SHELL
-source ~/.bashrc
+source source ~/$INIT_FILE
+
+# Check if pip is installed
+if ! command -v pip &> /dev/null; then
+    echo "pip is not installed. Installing pip..."
+    
+    # Install pip using sudo apt
+    sudo apt install python3-pip
+    echo "pip installed successfully."
+else
+    echo "pip is already installed."
+fi
 
 # Install gradio and psutil
 pip install gradio psutil fire
