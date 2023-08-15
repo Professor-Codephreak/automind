@@ -30,7 +30,12 @@ sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
 source ~/.bashrc<br />
 conda create --name automind python=3.9.1<br /><br />
 #replace with your shell here<br />
-conda activate bash<br />
+conda activate bash<br /><br />
+#conda reference for env display and quit
+conda env list<br/>
+conda list<br/>
+conda info package_name<br/>
+conda deactivate<br />
 
 # clone automind and install requirements<br />
 git clone https://github.com/Professor-Codephreak/automind<br />
@@ -67,7 +72,3 @@ details and verbose procedure
 
 ---------------------------------
 
-conda env list<br/>
-conda list<br/>
-conda info package_name<br/>
-conda deactivate<br />
