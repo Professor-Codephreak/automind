@@ -59,9 +59,10 @@ memory folder = memory<br /><br />
 
 -----------------------------------
 <br />
-# troubleshooting<br />
-llamacpp dependencies include<br />
-sudo apt-get install cmake gcc g++ git python3-dev libstdc++6 make wget pkg-config<br />
+# troubleshootingbr />
+<a href="https://github.com/ggerganov/llama.cpp">llamacpp source</a> build dependencies include<br />
+sudo apt-get install build-essential cmake gcc g++ git python3-dev libstdc++6 make wget pkg-config<br />
+
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
 
