@@ -77,9 +77,13 @@ source ~/$INIT_FILE
 conda env list
 
 # Initialize Miniconda then activate automind
-echo "Initializing Miniconda for $USER_SHELL..."
-source $HOME/miniconda3/bin/activate automind
+# echo "Initializing Miniconda for $USER_SHELL..."
+# source $HOME/miniconda3/bin/activate automind
 
+echo "Activating automind environment..."
+source $HOME/miniconda3/etc/profile.d/conda.sh
+conda activate base
+conda activate automind
 
 # Source the initialization file
 source ~/$INIT_FILE
