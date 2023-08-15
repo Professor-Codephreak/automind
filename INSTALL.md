@@ -34,10 +34,15 @@ conda activate bash<br />
 # clone automind and install requirements<br />
 git clone https://github.com/Professor-Codephreak/automind<br />
 cd automind<br />
+#install pip if you haven't already<br />
+sudo apt install python3-pip<br />
+#display version of pip installed<br />
+pip3 --version<br />
+#install automind requirements with pip<br />
 pip install -r requirements.txt<br />
 
 # uiux download language model<br />
-and run or run uiux.py if models folder is already populated
+and run or run uiux.py if models folder is already populated<br />
 
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"<br />
 
