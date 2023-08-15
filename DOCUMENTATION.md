@@ -65,11 +65,3 @@ Orchestrates the process by loading memory data, batching conversations, initial
         The "Llama" model generates meaningful responses based on the context of the entire conversation history.
 
 The integrated system allows users to have dynamic conversations, store and retrieve interaction history, and receive informed responses based on the context of the ongoing conversation. The outcome is a sophisticated conversational interface leverating automind.py + memory.py + aglm.py to provide an engaging and contextually relevant experience.
-
-to do<br />
-add download model to UI<br />
-add wgetter<br />
-add gitgetter<br />
-add automindx (executable folder sandbox)<br />
-add deployai gpt-auto function calling<br />
-expand multimodel parsing from aglm.py
