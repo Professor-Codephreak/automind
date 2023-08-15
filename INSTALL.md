@@ -67,6 +67,9 @@ memory folder = memory<br /><br />
 # manual llamacpp pip install and uninstall<br />
 pip uninstall llama-cpp-python<br />
 pip install llama-cpp-python<br />
+# On Ubuntu 22.04.6 this is working with cmake version 3.27.2<br />
+cmake --version<br />
+
 
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
