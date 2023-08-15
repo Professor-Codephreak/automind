@@ -8,23 +8,6 @@ Gradio interacts with html javascript and css <a href="https://www.gradio.app/gu
 <a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
 Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py<br />
 
------------------------------------
-
-## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
-
-To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
-
-details and verbose procedure
-1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
-2. Choose "Save link as..." or "Download linked file" from the context menu.
-3. Select a location on your computer to save the file.
-4. from the terminal
-5. chmod +x automind.install && ./automind.install
-
-
----------------------------------
-<br />
-
 # User Interface and Interaction (uiux.py)<br />
 
 (uiux.py) provides a user interface using the Gradio library to facilitate user interaction.
@@ -45,5 +28,22 @@ A function save_conversation_memory is called to save conversation history as JS
 # LLAMA Model Interaction<br />
 (aglm.py)<br />
 
-Initializes the LLAMA language model and tokenizer based on the specified models_folder models handling processing and tokenization of conversation context using the LLAMA model then generating contextually relevant responses using the LLAMA model. AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. (uiux.py) encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
+Initializes the LLAMA language model and tokenizer based on the specified models_folder models handling processing and tokenization of conversation context using the LLAMA model then generating contextually relevant responses using the LLAMA model. AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. (uiux.py) encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.<br />
+
+-----------------------------------
+
+## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+
+To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
+
+details and verbose procedure
+1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+2. Choose "Save link as..." or "Download linked file" from the context menu.
+3. Select a location on your computer to save the file.
+4. from the terminal
+5. chmod +x automind.install && ./automind.install
+
+
+---------------------------------
+<br />
 
