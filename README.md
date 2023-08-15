@@ -23,8 +23,7 @@ Handling different model types and initialization is based on model name calling
 (memory.py)<br />
 
 Conversation Memory Management is handled by (memory.py) creating a class DialogEntry to represent individual conversation dialog entries.
-A function save_conversation_memory is called to save conversation history as JSON files
-Memory is created by storing user instructions and model responses in memory files for context management as .json outputs with a timestamp.<br />
+A function save_conversation_memory is called to save conversation history as JSON files. Memory is created by storing user instructions and model responses in memory files for context management as .json outputs with a timestamp.<br />
 
 # LLAMA Model Interaction<br />
 (aglm.py)<br />
