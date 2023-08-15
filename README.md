@@ -6,7 +6,23 @@ project direction = automind automindx<br /><br />
 uiux.py provides Gradio output to local server for local language model interaction<br />
 Gradio interacts with html javascript and css <a href="https://www.gradio.app/guides/custom-CSS-and-JS">custom Gradio</a><br />
 <a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
-Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py
+Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py<br />
+-----------------------------------
+
+## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+
+To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
+
+details and verbose procedure
+1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+2. Choose "Save link as..." or "Download linked file" from the context menu.
+3. Select a location on your computer to save the file.
+4. from the terminal
+5. chmod +x automind.install && ./automind.install
+
+
+---------------------------------
+<br />
 
 # User Interface and Interaction (uiux.py)<br />
 
