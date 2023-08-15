@@ -21,7 +21,7 @@ Contextual Conversation Management<br />
 (automind.py) creates coherent conversation context integrating memory management and with chatbot behavior.
 Handling different model types and initialization is based on model name calling the model from the models folder. <br />
 
-(memory.py)<br /><br />
+(memory.py)<br />
 
 Conversation Memory Management is handled by (memory.py) creating a class DialogEntry to represent individual conversation dialog entries.
 A function save_conversation_memory is called to save conversation history as JSON files
