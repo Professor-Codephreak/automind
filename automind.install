@@ -52,7 +52,7 @@ if ! command -v conda &> /dev/null; then
     chmod +x Miniconda3-latest-Linux-x86_64.sh
     sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
     echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> source ~/$INIT_FILE
-    source source ~/$INIT_FILE
+    source ~/$INIT_FILE
     # Change ownership of the miniconda3 directory to the user
     sudo chown -R $USER:$USER $HOME/miniconda3
 else
