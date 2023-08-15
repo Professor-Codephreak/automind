@@ -28,7 +28,7 @@ A function save_conversation_memory is called to save conversation history as JS
 Memory is created by storing user instructions and model responses in memory files for context management as .json outputs with a timestamp.<br />
 
 # LLAMA Model Interaction<br />
-(aglm.py)<br /><br />
+(aglm.py)<br />
 
 Initializes the LLAMA language model and tokenizer based on the specified models_folder models handling processing and tokenization of conversation context using the LLAMA model then generating contextually relevant responses using the LLAMA model. AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. (uiux.py) encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
 
