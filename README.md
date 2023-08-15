@@ -8,25 +8,27 @@ Gradio interacts with html javascript and css <a href="https://www.gradio.app/gu
 <a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
 Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py
 
-# User Interface and Interaction (uiux.py):
+# User Interface and Interaction (uiux.py)<br />
 
-A user interface using the Gradio library to facilitate user interaction.
-A chatbot interface that takes user input, processes it, and generates responses.
+(uiux.py) provides a user interface using the Gradio library to facilitate user interaction.
+This chatbot interface takes the user input, processes it, generating response.
 Conversation memory handling to store and manage user instructions and model responses.
-Contextual Conversation Management (automind.py):
+Contextual Conversation Management<br />
 
-A mechanism for formatting and managing conversation history using the format_to_llama_chat_style function.
-Integration of memory management and chatbot behavior to maintain a coherent conversation context.
-Handling different model types and initialization based on model names.
-Conversation Memory Management (memory.py):
+(automind.py)<br /><br />
 
-A class DialogEntry to represent individual conversation dialog entries.
-A function save_conversation_memory to save conversation history to JSON files.
-Storing user instructions and model responses in memory files for context management.
-LLAMA Model Interaction (aglm.py):
+(automind.py) provides the mechanism to format and managing conversation history using the format_to_llama_chat_style function.
+(automind.py) creates coherent conversation context integrating memory management and with chatbot behavior.
+Handling different model types and initialization is based on model name calling the model from the models folder. <br />
 
-Initialization of a LLAMA language model and tokenizer based on a specified models_folder.
-Processing and tokenization of conversation context using the LLAMA model.
-Generating contextually relevant responses using the LLAMA model.
-AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. automind encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
+(memory.py)<br /><br />
+
+Conversation Memory Management is handled by (memory.py) creating a class DialogEntry to represent individual conversation dialog entries.
+A function save_conversation_memory is called to save conversation history as JSON files
+Memory is created by storing user instructions and model responses in memory files for context management as .json outputs with a timestamp.<br />
+
+# LLAMA Model Interaction<br />
+(aglm.py)<br /><br />
+
+Initializes the LLAMA language model and tokenizer based on the specified models_folder models handling processing and tokenization of conversation context using the LLAMA model then generating contextually relevant responses using the LLAMA model. AUTOMIND uses a LLAMA language model to generate responses based on user instructions and conversation history. (uiux.py) encompasses user interface design, memory management, context handling, and interaction with the language model to create a conversational experience for users.
 
