@@ -53,6 +53,8 @@ if ! command -v conda &> /dev/null; then
     sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
     echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> source ~/$INIT_FILE
     source ~/$INIT_FILE
+    #remove Miniconda3-latest-Linux-x86_64.sh installer
+    rm Miniconda3-latest-Linux-x86_64.sh
     # Change ownership of the miniconda3 directory to the user
     sudo chown -R $USER:$USER $HOME/miniconda3
 else
@@ -67,9 +69,10 @@ conda --version
 
 # Create automind miniconda environment
 conda create --name automind python=3.9.1 -y
-source ~/$INIT_FILE
 # Activate automind miniconda enviroment
 conda activate automind
+source ~/$INIT_FILE
+
 # Display miniconda environment list to terminal output
 conda env list
 
@@ -84,12 +87,14 @@ if ! command -v pip &> /dev/null; then
     
     # Install pip using sudo apt
     sudo apt install python3-pip
-    echo "pip installed successfully."
+    echo "pip installed successfully"
+    echo "upgrading pip"
+    sudo -H pip3 install --upgrade pip
 else
-    echo "pip is already installed."
+    echo "pip is already installed"
 fi
 
-# Install gradio and psutil
+# Install gradio psutil and fire
 pip install gradio psutil fire
 
 # Clone the 'automind' repository and install its requirements
