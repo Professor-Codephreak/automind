@@ -16,6 +16,7 @@ detailed and verbose procedure
 
 
 # Example loading automind using Ubuntu 22.04LTS<br />
+
 Creates Professor Codephreak<br /><br />
 Professor Codephreak is an expert in machine learning, computer science and computer programming<br />
 codephreak agenda: to create AUTOMINDx autonomous deployment<br />
@@ -57,6 +58,10 @@ models folder = models<br />
 memory folder = memory<br /><br />
 
 -----------------------------------
+<br />
+# troubleshooting<br />
+llamacpp dependencies include<br />
+sudo apt-get install cmake gcc g++ git python3-dev libstdc++6 make wget pkg-config<br />
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
 
