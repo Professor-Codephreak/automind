@@ -85,9 +85,17 @@ conda env list
 #conda activate base
 #conda activate automind
 
-echo "Activating automind environment..."
-eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
-conda activate automind
+#echo "Activating automind environment..."
+#eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
+#conda activate automind
+
+# Activate automind environment if not already activated
+if [[ $(conda info --envs | grep automind) == "" ]]; then
+    echo "Activating automind environment..."
+    eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
+    conda activate automind
+fi
+
 
 # Source the initialization file
 source ~/$INIT_FILE
