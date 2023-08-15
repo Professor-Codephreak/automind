@@ -60,14 +60,14 @@ else
     conda update -y conda
 fi
 
-source source ~/$INIT_FILE
+source ~/$INIT_FILE
 
 # show details of the conda install
 conda --version
 
 # Create automind miniconda environment
 conda create --name automind python=3.9.1 -y
-source source ~/$INIT_FILE
+source ~/$INIT_FILE
 # Activate automind miniconda enviroment
 conda activate automind
 # Display miniconda environment list to terminal output
@@ -76,7 +76,7 @@ conda env list
 # Initialize miniconda from the detected shell
 echo "Initializing Miniconda for $USER_SHELL..."
 conda init $USER_SHELL
-source source ~/$INIT_FILE
+source ~/$INIT_FILE
 
 # Check if pip is installed
 if ! command -v pip &> /dev/null; then
