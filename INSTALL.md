@@ -33,7 +33,10 @@ copy paste <a href="https://github.com/Professor-Codephreak/automind/blob/main/a
 save as automind.install<br />
 #from the terminal<br />
 chmod +x automind.install<br />
-./automind.install<br />
+./automind.install<br /><br />
+
+[Click here to download automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+
 
 
 -------
