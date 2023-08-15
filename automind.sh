@@ -40,7 +40,8 @@ conda create --name automind python=3.9.1 -y
 source ~/.bashrc
 conda init zsh
 source ~/.bashrc
-conda activate automind
+#add environemnt shell script here
+conda activate zsh
 conda env list
 
 # Install gradio and psutil
