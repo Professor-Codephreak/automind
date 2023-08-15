@@ -76,9 +76,10 @@ source ~/$INIT_FILE
 # Display Miniconda environment list to terminal output
 conda env list
 
-# Initialize Miniconda from the detected shell
+# Initialize Miniconda then activate automind
 echo "Initializing Miniconda for $USER_SHELL..."
-conda init $USER_SHELL
+source $HOME/miniconda3/bin/activate automind
+
 
 # Source the initialization file
 source ~/$INIT_FILE
