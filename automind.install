@@ -105,5 +105,4 @@ python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" -
 #README currently loads with Bash shell. todo: add shell read to install
 #two terminal inputs for deployment make automind.install exectuable and open with bash
 
-#chmod +x automind.install
-#./automind.install
+#chmod +x automind.install && ./automind.install
