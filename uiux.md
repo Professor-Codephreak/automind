@@ -61,4 +61,6 @@
         After launching the UI, the script attempts to generate a response from memory.
         uiux.py uses the generate_response_from_memory aglm.py function.
 
-In summary, the uiux.py code provides a user interface for interacting with different models using Gradio. It initializes the appropriate models and tokenizers, manages user inputs, generates bot responses, and maintains conversation history. The UI is configured and launched using Gradio's components and features.
+In summary, the uiux.py code provides a user interface for interacting with different models using Gradio. It initializes the appropriate models and tokenizers, manages user inputs, generates bot responses, and maintains conversation history. The UI is configured and launched using Gradio's components and features.<br />
+
+python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
