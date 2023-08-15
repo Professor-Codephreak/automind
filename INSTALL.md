@@ -29,7 +29,7 @@ sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
 #reload the shell configuration settings change for your shell example is for bash
 source ~/.bashrc<br />
 conda create --name automind python=3.9.1<br /><br />
-#replace with your shell here<br />
+#replace with bash with your shell<br />
 conda activate bash<br /><br />
 #conda reference for env display and quit
 conda env list<br/>
