@@ -1,10 +1,12 @@
 #!/bin/bash
 # tested on Ubuntu 22.04.6 LTS
 # automind (c) 2023 codephreak MIT license
-# this script updates Ubuntu system to current
+# recognizes user shell bash zsh fish powershell csh
+# this script promptes user to update system to current
 # checks for conda and updates or installs conda
 # actives automind conda environment
-# clones automind
+# runs conda init USER_SHELL
+# clones automind and enters directory
 # installs automind with default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin
 # launches boilerplate Gradio instruction response and expose API to localhost and globalhost
 # Professor Codephreak is ...
