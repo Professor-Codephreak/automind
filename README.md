@@ -7,6 +7,7 @@ uiux.py provides Gradio output to local server for local language model interact
 Gradio interacts with html javascript and css <a href="https://www.gradio.app/guides/custom-CSS-and-JS">custom Gradio</a><br />
 <a href="https://www.gradio.app/guides/getting-started-with-the-js-client">Gradio Javascript Client</a><br />
 Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py<br />
+
 -----------------------------------
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
