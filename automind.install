@@ -36,12 +36,19 @@ source ~/.bashrc
 # show details of the conda install
 conda --version
 
-# Create and activate the 'automind' conda environment
+# Create automind miniconda environment
 conda create --name automind python=3.9.1 -y
 source ~/.bashrc
+# Activate automind miniconda enviroment
 conda activate automind
 conda env list
-conda init bash
+
+# Detect user's shell setting shell name as a variable
+USER_SHELL=$(env | grep SHELL | awk -F'=' '{print $2}')
+
+# Initialize miniconda for the detected shell
+echo "Initializing Miniconda for $USER_SHELL..."
+conda init $USER_SHELL
 source ~/.bashrc
 
 # Install gradio and psutil
