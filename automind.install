@@ -33,7 +33,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/$INIT_FILE
 source ~/$INIT_FILE
 
 # Ask user if they want to upgrade the system
-read -p "Would you like to upgrade your system? (y/n): " UPGRADE_SYSTEM
+read -p "Would you like to upgrade your apt based system? (y/n): " UPGRADE_SYSTEM
 if [[ $UPGRADE_SYSTEM == "y" || $UPGRADE_SYSTEM == "Y" ]]; then
     sudo apt-get update
     sudo apt-get upgrade -y
