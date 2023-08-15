@@ -24,7 +24,14 @@ python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" -
 
 model_name.txt in the models folder with your model will autoread. the above overwrites the call to model_name.txt<br />
 models folder = models<br />
-memory folder = memory<br />
+memory folder = memory<br /><br />
+
+creating a one click installer, however, for now<br />
+copy paste automind.install to your desired install folder<br />
+save as automind.install<br />
+#from the terminal<br />
+chmod +x automind.install<br />
+./automind.install<br />
 
 
 -------
