@@ -46,9 +46,9 @@ memory folder = memory<br /><br />
 
 -----------------------------------
 
-To install right click "Save link as ..." `automind.install` chmod +x automind.install && automind.install
-
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
+
+To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
 
 details and verbose procedure
 1. Right-click the following link: [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
