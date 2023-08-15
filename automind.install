@@ -124,7 +124,7 @@ pip --version
 pip install -r requirements.txt
 
 # Change ownership of the automind directory to the user
-echo "enter password to change ownership of automind directory to $USER"
+echo "transfer ownership of automind directory to $USER"
 sudo chown -R $USER:$USER .
 
 # Run UIUX
