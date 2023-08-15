@@ -41,6 +41,7 @@ conda create --name automind python=3.9.1 -y
 source ~/.bashrc
 # Activate automind miniconda enviroment
 conda activate automind
+# Display miniconda environment list to terminal output
 conda env list
 
 # Detect user's shell setting shell name as a variable
