@@ -39,10 +39,10 @@ conda --version
 # Create and activate the 'automind' conda environment
 conda create --name automind python=3.9.1 -y
 source ~/.bashrc
-conda init bash
-source ~/.bashrc
 conda activate automind
 conda env list
+conda init bash
+source ~/.bashrc
 
 # Install gradio and psutil
 pip install gradio psutil fire
