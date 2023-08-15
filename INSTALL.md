@@ -1,6 +1,6 @@
 -----------------------------------
 
-To install right click "Save link as ..." `automind.install` chmod +x automind.install && automind.install
+To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
 
