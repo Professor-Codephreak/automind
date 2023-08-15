@@ -64,6 +64,9 @@ memory folder = memory<br /><br />
   sudo apt-get install build-essential cmake gcc g++ git python3-dev libstdc++6 make pkg-config<br />
 # git and wget<br  />
   sudo apt-get install git wget</br>
+# manual llamacpp pip install and uninstall<br />
+pip uninstall llama-cpp-python<br />
+pip install llama-cpp-python<br />
 
 
 ## [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install)
