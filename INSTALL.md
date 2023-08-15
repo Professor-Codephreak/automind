@@ -59,7 +59,7 @@ memory folder = memory<br /><br />
 
 -----------------------------------
 <br />
-# troubleshootingbr />
+# troubleshooting<br />
 <a href="https://github.com/ggerganov/llama.cpp">llamacpp source</a> build dependencies include<br />
   sudo apt-get install build-essential cmake gcc g++ git python3-dev libstdc++6 make pkg-config<br />
 # git and wget<br  />
