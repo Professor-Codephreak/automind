@@ -102,7 +102,5 @@ pip install -r requirements.txt
 # Run UIUX
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
 
-#README currently loads with Bash shell. todo: add shell read to install
-#two terminal inputs for deployment make automind.install exectuable and open with bash
-
+#README download automind.install then deploy from terminal<br />
 #chmod +x automind.install && ./automind.install
