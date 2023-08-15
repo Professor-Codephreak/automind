@@ -36,7 +36,8 @@ git clone https://github.com/Professor-Codephreak/automind<br />
 cd automind<br />
 pip install -r requirements.txt<br />
 
-# uiux download language model and run or run if models folder is populated
+# uiux download language model<br />
+and run or run if models folder is populated
 
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"<br />
 
