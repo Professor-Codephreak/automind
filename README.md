@@ -1,7 +1,7 @@
 # IAML Intelligent Autonomous Machine Learning<br />
 "I Am Machine Learning"<br /><br />
 project codename = codephreak<br />
-project direction = automind automindx<br /><br />
+project direction = automind <a href="https://github.com/automindx>automindx</a><br /><br />
 "Professor Codephreak is an expert in machine learning, computer science and computer programming ..."<br />
 uiux.py provides Gradio output to local server for local language model interaction<br />
 Gradio interacts with html javascript and css <a href="https://www.gradio.app/guides/custom-CSS-and-JS">custom Gradio</a><br />
