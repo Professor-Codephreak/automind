@@ -75,7 +75,9 @@ gcc --version</br />
 sudo update-alternatives --config gcc<br />
 # install pip3<br />
 sudo apt-get install python3-pip<br />
-pip3 --version<br />
+pip3 --version<br /><br />
+# diagnostics<br />
+sudo apt-get install hardinfo htop nvtop<br />
 
 
 
