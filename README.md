@@ -11,7 +11,7 @@ Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py<br />
 # User Interface and Interaction (uiux.py)<br />
 
 (uiux.py) provides a user interface using the Gradio library to facilitate user interaction.
-This chatbot interface takes the user input, processes it, generating response includingc onversation memory handling storing and managing user instructions and model responses. The result is a lcocl language model prompted to run as "Professor Codephreak is an expert in computer programming ....."
+This chatbot interface takes the user input, processes it, generating response includingc onversation memory handling storing and managing user instructions and model responses. The result is a local language model prompted to run as "Professor Codephreak is an expert in computer programming ....." that refers to itself as "codephreak"
 Contextual Conversation Management<br />
 
 (automind.py)<br /><br />
