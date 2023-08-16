@@ -15,7 +15,7 @@ detailed and verbose procedure
 ---------------------------------<br />
 
 
-# Example loading automind using Ubuntu 22.04LTS<br />
+# Example loading automind using <a href="https://ubuntu.com/desktop/flavours">Ubuntu 22.04LTS</a><br />
 
 Creates Professor Codephreak<br /><br />
 Professor Codephreak is an expert in machine learning, computer science and computer programming<br />
