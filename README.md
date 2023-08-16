@@ -14,15 +14,11 @@ Documentation: codephreak = uiux.py + memory.py + automind.py + aglm.py<br />
 This chatbot interface takes the user input, processes it, generating response includingc onversation memory handling storing and managing user instructions and model responses. The result is a local language model prompted to run as "Professor Codephreak is an expert in computer programming ....." that refers to itself as "codephreak"
 Contextual Conversation Management<br />
 
-(automind.py)<br /><br />
-
 (automind.py) provides the mechanism to format and managing conversation history using the format_to_llama_chat_style function.
 (automind.py) creates coherent conversation context integrating memory management and with chatbot behavior.
 Handling different model types and initialization is based on model name calling the model from the models folder. <br />
 
-(memory.py)<br />
-
-Conversation Memory Management is handled by (memory.py) creating a class DialogEntry to represent individual conversation dialog entries.
+(memory.py) handles Conversation Memory Management by  creating a class DialogEntry to represent individual conversation dialog entries.
 A function save_conversation_memory is called to save conversation history as JSON files. Memory is created by storing user instructions and model responses in memory files for context management as .json outputs with a timestamp.<br />
 
 # LLAMA Model Interaction<br />
