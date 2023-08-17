@@ -48,7 +48,8 @@ pip3 --version<br />
 #install automind requirements with pip<br />
 pip install -r requirements.txt<br />
 
-# uiux download language model<br />
+# uiux call downloads language model on first deployment<br />
+# RUNS model post model download 
 and run or run uiux.py if models folder is already populated<br />
 
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"<br />
@@ -96,6 +97,10 @@ details and verbose procedure
 
 
 ---------------------------------
+
+# RUN codephreak
+
+python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
 
   
 
