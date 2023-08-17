@@ -49,12 +49,16 @@ pip3 --version<br />
 pip install -r requirements.txt<br />
 
 # uiux call downloads language model on first deployment<br />
-# RUNS model post model download 
-and run or run uiux.py if models folder is already populated<br />
+
+python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
+
+# same call to uiux.py RUNS model post model download<br />
 
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"<br />
 
-model_name.txt in the models folder with your model will autoread. the above overwrites the call to model_name.txt<br />
+# file structure<br />
+
+model_name.txt in the models folder with your model will autoread. the above call to uiux.py over-rides the call to model_name.txt<br />
 models folder = models<br />
 memory folder = memory<br /><br />
 
