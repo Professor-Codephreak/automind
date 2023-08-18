@@ -79,7 +79,22 @@ else
     sudo chown -R $USER:$USER $HOME/miniconda3
 fi
 
-source ~/$INIT_FILE
+echo "Initializing Miniconda for $USER_SHELL..."
+# Initialize conda for the user's shell
+if [[ "$USER_SHELL" == *"bash"* ]]; then
+    conda init bash
+    source ~/.bashrc
+    conda activate bash
+elif [[ "$USER_SHELL" == *"zsh"* ]]; then
+    conda init zsh
+    source ~/.zshrc
+    conda activate bash
+elif [[ "$USER_SHELL" == *"csh"* ]]; then
+    conda init tcsh
+    source ~/.cshrc
+    conda activate tcsh
+fi
+
 
 # show details of the conda install
 conda --version
@@ -98,22 +113,6 @@ if [[ ! -z "$AUTOMIND_ENV" ]]; then
     else
         echo "continuing with existing automind environment."
     fi
-fi
-
-echo "Initializing Miniconda for $USER_SHELL..."
-# Initialize conda for the user's shell
-if [[ "$USER_SHELL" == *"bash"* ]]; then
-    conda init bash
-    source ~/.bashrc
-    conda activate bash
-elif [[ "$USER_SHELL" == *"zsh"* ]]; then
-    conda init zsh
-    source ~/.zshrc
-    conda activate bash
-elif [[ "$USER_SHELL" == *"csh"* ]]; then
-    conda init tcsh
-    source ~/.cshrc
-    conda activate tcsh
 fi
 
 # Create and initialize automind Miniconda environment
