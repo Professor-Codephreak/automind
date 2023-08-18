@@ -124,10 +124,6 @@ fi
 conda env list
 conda --version
 
-# Initialize Miniconda then activate automind
-# echo "Initializing Miniconda for $USER_SHELL..."
-# source $HOME/miniconda3/bin/activate automind
-
 # Activate automind environment if not already activated
 if [[ $(conda info --envs | grep automind) == "" ]]; then
     echo "Activating automind environment..."
@@ -137,6 +133,10 @@ fi
 
 # Source the initialization file
 source ~/$INIT_FILE
+
+# Initialize Miniconda then activate automind
+# echo "Initializing Miniconda for $USER_SHELL..."
+# source $HOME/miniconda3/bin/activate automind
 
 # Check if pip is installed
 if ! command -v pip &> /dev/null; then
