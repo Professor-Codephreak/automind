@@ -54,6 +54,7 @@ if ! command -v conda &> /dev/null; then
     #remove Miniconda3-latest-Linux-x86_64.sh installer
     rm Miniconda3-latest-Linux-x86_64.sh
     # Change ownership of the miniconda3 directory to the user
+    #echo "transfer ownership of automind directory to $USER"
     sudo chown -R $USER:$USER $HOME/miniconda3
 else
     echo "Miniconda is already installed. Updating Conda..."
@@ -122,8 +123,8 @@ pip --version
 pip install -r requirements.txt
 
 # Change ownership of the automind directory to the user
-echo "transfer ownership of automind directory to $USER"
-sudo chown -R $USER:$USER .
+#echo "transfer ownership of automind directory to $USER"
+#sudo chown -R $USER:$USER .
 
 # Run UIUX
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
