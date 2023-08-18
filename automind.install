@@ -1,10 +1,10 @@
 #!/bin/bash
-# tested on Ubuntu 22.04.6 LTS and Manjaro users choose no to update system
+# tested on Ubuntu 22.04.6 LTS Manjaro Linux and Linux Mint 21.2 pacman users choose no to update system request
 
 # automind (c) 2023 codephreak MIT license
 
 # requirements Linux sudo
-# recognizes user shell bash zsh fish powershell csh
+# recognizes user shell bash zsh
 # script promptes user to update system to current using apt
 # checks for conda and updates or installs conda
 # actives automind conda environment
