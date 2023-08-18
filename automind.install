@@ -20,8 +20,6 @@ if [[ "$USER_SHELL" == *"bash"* ]]; then
     INIT_FILE=".bashrc"
 elif [[ "$USER_SHELL" == *"zsh"* ]]; then
     INIT_FILE=".zshrc"
-elif [[ "$USER_SHELL" == *"fish"* ]]; then
-    INIT_FILE=".config/fish/config.fish"
 elif [[ "$USER_SHELL" == *"csh"* ]]; then
     INIT_FILE=".cshrc"
 else
