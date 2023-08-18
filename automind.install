@@ -84,7 +84,24 @@ source ~/$INIT_FILE
 # show details of the conda install
 conda --version
 
+# conda activate automind environment check
+AUTOMIND_ENV=$(conda info --envs | grep automind)
+if [[ ! -z "$AUTOMIND_ENV" ]]; then
+    echo "automind environment already exists."
+    read -p "Do you want to overwrite the existing automind environment? (y/n): " OVERWRITE_AUTOMIND
+
+    if [[ $OVERWRITE_AUTOMIND == "y" || $OVERWRITE_AUTOMIND == "Y" ]]; then
+        # Deactivate current environment before removing
+        conda deactivate
+        conda remove --name automind --all -y
+        echo "existing automind environment has been removed."
+    else
+        echo "continuing with existing automind environment."
+    fi
+fi
+
 # Create and initialize automind Miniconda environment
+echo "creating automind"
 conda create --name automind python=3.9.1 -y
 # Activate automind Miniconda enviroment
 echo "Initializing Miniconda for $USER_SHELL..."
