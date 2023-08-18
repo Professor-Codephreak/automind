@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # tested on Ubuntu 22.04.6 LTS Manjaro Linux and Linux Mint 21.2 pacman users choose no to update system request
 
 # automind (c) 2023 codephreak MIT license
