@@ -42,21 +42,41 @@ else
 fi
 
 # Check if Miniconda is already installed
-if ! command -v conda &> /dev/null; then
-    # Download and install Miniconda
+if command -v conda &> /dev/null; then
+    echo "Miniconda is already installed."
+    read -p "Do you want to:
+1) Update the existing Miniconda installation
+2) Continue using the existing Miniconda installation
+Enter your choice (1/2): " CONDA_INSTALL_CHOICE
+
+    if [[ $CONDA_INSTALL_CHOICE == "1" ]]; then
+        # Update the existing Miniconda installation
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+        chmod +x Miniconda3-latest-Linux-x86_64.sh
+        sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3 -u
+        echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> ~/$INIT_FILE
+        source ~/$INIT_FILE
+        # Remove the installer
+        rm Miniconda3-latest-Linux-x86_64.sh
+        # Change ownership of the miniconda3 directory to the user
+        sudo chown -R $USER:$USER $HOME/miniconda3
+    elif [[ $CONDA_INSTALL_CHOICE == "2" ]]; then
+        echo "Continuing with existing Miniconda installation."
+    else
+        echo "Invalid choice. Exiting."
+        exit 1
+    fi
+else
+    # Miniconda is not installed, proceed with installation
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod +x Miniconda3-latest-Linux-x86_64.sh
     sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
     echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> ~/$INIT_FILE
     source ~/$INIT_FILE
-    #remove Miniconda3-latest-Linux-x86_64.sh installer
+    # Remove the installer
     rm Miniconda3-latest-Linux-x86_64.sh
     # Change ownership of the miniconda3 directory to the user
-    #echo "transfer ownership of automind directory to $USER"
     sudo chown -R $USER:$USER $HOME/miniconda3
-else
-    echo "Miniconda is already installed. Updating Conda..."
-    sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3 -u
 fi
 
 source ~/$INIT_FILE
@@ -88,15 +108,6 @@ conda --version
 # echo "Initializing Miniconda for $USER_SHELL..."
 # source $HOME/miniconda3/bin/activate automind
 
-#echo "Activating automind environment..."
-#source $HOME/miniconda3/etc/profile.d/conda.sh
-#conda activate base
-#conda activate automind
-
-#echo "Activating automind environment..."
-#eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
-#conda activate automind
-
 # Activate automind environment if not already activated
 if [[ $(conda info --envs | grep automind) == "" ]]; then
     echo "Activating automind environment..."
@@ -104,14 +115,12 @@ if [[ $(conda info --envs | grep automind) == "" ]]; then
     conda activate automind
 fi
 
-
 # Source the initialization file
 source ~/$INIT_FILE
 
 # Check if pip is installed
 if ! command -v pip &> /dev/null; then
     echo "pip is not installed. Installing pip..."
-    
     # Install pip using sudo apt
     sudo apt install python3-pip
     echo "pip installed successfully"
@@ -130,10 +139,6 @@ cd automind
 pip install --upgrade pip
 pip --version
 pip install -r requirements.txt
-
-# Change ownership of the automind directory to the user
-#echo "transfer ownership of automind directory to $USER"
-#sudo chown -R $USER:$USER .
 
 # Run UIUX
 python uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
