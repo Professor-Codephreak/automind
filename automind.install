@@ -22,8 +22,6 @@ elif [[ "$USER_SHELL" == *"zsh"* ]]; then
     INIT_FILE=".zshrc"
 elif [[ "$USER_SHELL" == *"fish"* ]]; then
     INIT_FILE=".config/fish/config.fish"
-elif [[ "$USER_SHELL" == *"powershell"* ]]; then
-    INIT_FILE="Microsoft.PowerShell_profile.ps1"
 elif [[ "$USER_SHELL" == *"csh"* ]]; then
     INIT_FILE=".cshrc"
 else
@@ -51,7 +49,7 @@ if ! command -v conda &> /dev/null; then
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod +x Miniconda3-latest-Linux-x86_64.sh
     sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
-    echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> source ~/$INIT_FILE
+    echo 'export PATH="$HOME/miniconda3/bin:$PATH"' >> ~/$INIT_FILE
     source ~/$INIT_FILE
     #remove Miniconda3-latest-Linux-x86_64.sh installer
     rm Miniconda3-latest-Linux-x86_64.sh
