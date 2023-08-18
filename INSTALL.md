@@ -99,7 +99,7 @@ details and verbose procedure
 4. from the terminal
 5. chmod +x automind.install && ./automind.install
 
-# rewrite of basic manual install barely documented<br />
+# rewrite of basic manual installd<br />
 sudo apt-get install build-essential cmake gcc g++ git python3-dev python3-pip libstdc++6 make pkg-config<br />
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
 chmod +x Miniconda3-latest-Linux-x86_64.sh<br />
