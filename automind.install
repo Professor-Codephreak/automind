@@ -100,10 +100,6 @@ if [[ ! -z "$AUTOMIND_ENV" ]]; then
     fi
 fi
 
-# Create and initialize automind Miniconda environment
-echo "creating automind"
-conda create --name automind python=3.9.1 -y
-# Activate automind Miniconda enviroment
 echo "Initializing Miniconda for $USER_SHELL..."
 # Initialize conda for the user's shell
 if [[ "$USER_SHELL" == *"bash"* ]]; then
@@ -120,9 +116,9 @@ elif [[ "$USER_SHELL" == *"csh"* ]]; then
     conda activate tcsh
 fi
 
-# show details of the Miniconda automind install environment
-conda env list
-conda --version
+# Create and initialize automind Miniconda environment
+echo "creating automind"
+conda create --name automind python=3.9.1 -y
 
 # Activate automind environment if not already activated
 if [[ $(conda info --envs | grep automind) == "" ]]; then
@@ -134,9 +130,9 @@ fi
 # Source the initialization file
 source ~/$INIT_FILE
 
-# Initialize Miniconda then activate automind
-# echo "Initializing Miniconda for $USER_SHELL..."
-# source $HOME/miniconda3/bin/activate automind
+# show details of the Miniconda automind install environment
+conda env list
+conda --version
 
 # Check if pip is installed
 if ! command -v pip &> /dev/null; then
