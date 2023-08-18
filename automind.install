@@ -114,7 +114,10 @@ elif [[ "$USER_SHELL" == *"zsh"* ]]; then
     conda init zsh
     source ~/.zshrc
     conda activate bash
-
+elif [[ "$USER_SHELL" == *"csh"* ]]; then
+    conda init tcsh
+    source ~/.cshrc
+    conda activate tcsh
 fi
 
 # show details of the Miniconda automind install environment
