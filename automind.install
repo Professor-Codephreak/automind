@@ -64,14 +64,25 @@ source ~/$INIT_FILE
 # show details of the conda install
 conda --version
 
-# Create automind Miniconda environment
+# Create and initialize automind Miniconda environment
 conda create --name automind python=3.9.1 -y
-# Activate automind miniconda enviroment
-conda activate automind
-source ~/$INIT_FILE
+# Activate automind Miniconda enviroment
+echo "Initializing Miniconda for $USER_SHELL..."
+# Initialize conda for the user's shell
+if [[ "$USER_SHELL" == *"bash"* ]]; then
+    conda init bash
+    source ~/.bashrc
+    conda activate bash
+elif [[ "$USER_SHELL" == *"zsh"* ]]; then
+    conda init zsh
+    source ~/.zshrc
+    conda activate bash
 
-# Display Miniconda environment list to terminal output
+fi
+
+# show details of the Miniconda automind install environment
 conda env list
+conda --version
 
 # Initialize Miniconda then activate automind
 # echo "Initializing Miniconda for $USER_SHELL..."
