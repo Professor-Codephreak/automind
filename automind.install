@@ -57,7 +57,7 @@ if ! command -v conda &> /dev/null; then
     sudo chown -R $USER:$USER $HOME/miniconda3
 else
     echo "Miniconda is already installed. Updating Conda..."
-    conda update -y conda
+    sudo ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3 -u
 fi
 
 source ~/$INIT_FILE
