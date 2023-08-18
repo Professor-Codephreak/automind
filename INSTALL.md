@@ -99,10 +99,27 @@ details and verbose procedure
 4. from the terminal
 5. chmod +x automind.install && ./automind.install
 
+# rewrite of basic manual install barely documented<br />
 
----------------------------------
-
-# RUN codephreak
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
+chmod +x Miniconda3-latest-Linux-x86_64.sh<br />
+sudo ./Miniconda3-latest-Linux-x86_64.sh<br />
+source ~/.bashrc<br />
+conda create --name automind python=3.9.1<br />
+conda init<br />
+source ~/.bashrc<br />
+conda activate bash<br />
+git clone https://github.com/Professor-Codephreak/automind<br />
+cd automind<br />
+#install pip if you haven't already<br />
+sudo apt install python3-pip<br />
+#display version of pip installed<br />
+pip3 --version<br />
+#install automind requirements with pip<br />
+pip install -r requirements.txt<br />
+-------------------------------------
+<br />
+# RUN codephreak<br />
 
 python3 uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
 
