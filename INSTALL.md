@@ -1,3 +1,6 @@
+This build will experience a 4096 memory input too large error with pasting of a large prompt into the UI<br />
+This Professor Codephreak build is being left intact as the first example of the working aGLM prototype</b>
+Work continues at <a href="https://github.com/pythaiml/automindx">automindx</a> as the next evolution of Professor Codephreak's core intention value of creating AUTOMINDx<br />
 -----------------------------------
 
 To install right click "Save link as ..." [automind.install](https://raw.githubusercontent.com/Professor-Codephreak/automind/main/automind.install) chmod +x automind.install && automind.install
