@@ -21,7 +21,7 @@ Creates Professor Codephreak<br /><br />
 Professor Codephreak is an expert in machine learning, computer science and computer programming<br />
 codephreak agenda: to create AUTOMINDx autonomous deployment<br />
 
-default model llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin<br />
+default model <a href="https://huggingface.co/search/full-text?q=llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin">llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin</a><br />
 
 # manual install miniconda<br />
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<br />
