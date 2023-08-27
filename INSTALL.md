@@ -55,9 +55,9 @@ python3 uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" 
 # same call to uiux.py RUNS model post model download<br />
 
 ```bash
-python3 uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin"
-```<br />
-
+python3 uiux.py --model_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --tokenizer_name="TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML" --model_type="ggml" --save_history --file_name="llama-2-7b-chat-codeCherryPop.ggmlv3.q4_1.bin
+```
+<br />
 # file structure<br />
 
 model_name.txt in the models folder with your model will autoread. the above call to uiux.py over-rides the call to model_name.txt<br />
