@@ -16,7 +16,7 @@ detailed and verbose procedure
 5. chmod +x automind.install && ./automind.install
 
 ---------------------------------<br />
-<a href="https://huggingface.co/TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML">Delivers llama2-7b-chat-codeCherryPop-qLoRA-GGML</a><br />
+Delivers <a href="https://huggingface.co/TheBloke/llama2-7b-chat-codeCherryPop-qLoRA-GGML">llama2-7b-chat-codeCherryPop-qLoRA-GGML</a><br />
 
 # Example loading automind using <a href="https://ubuntu.com/desktop/flavours">Ubuntu 22.04LTS</a><br />
 
