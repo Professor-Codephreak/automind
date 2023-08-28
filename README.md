@@ -3,7 +3,7 @@ ongoing development of Professor Codephreak LLM <a href="https://github.com/pyth
 
 
 This Professor Codephreak build is being left intact as the first example of the working aGLM prototype</b>
-Work continues at <a href="https://github.com/pythaiml/automindx">automindx</a> as the next evolution of Professor Codephreak's core intention value of creating AUTOMINDx<br />
+Work continues at <a href="https://github.com/pythaiml/automindx">automindx</a> as the next evolution of Professor Codephreak's core intention value and success creating <a href="https://automindx.dmg.finance">AUTOMINDx</a><br />
 
 
 # IAML Intelligent Autonomous Machine Learning<br />
