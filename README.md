@@ -1,5 +1,6 @@
 This build will experience a 4096 memory input too large error with pasting of a large prompt into the UI<br /><br />
-ongoing development of Professor Codephreak LLM <a href="https://github.com/pythaiml/automindx">here</a>
+ongoing development of Professor Codephreak LLM <a href="https://github.com/pythaiml/automindx">here</a><br />
+To avoid confusion <a href="https://github.com/pythaiml">automindx</a> is the local language model executable and <a href="https://automindx.dmg.finance">AUTOMINDx</a> is the global deployment autonomous agents development environment<br />
 
 
 This Professor Codephreak build is being left intact as the first example of the working aGLM prototype</b>
